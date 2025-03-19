@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--grid is by default bock element, but we can define the number and size of the columns by using grid-template-columns-->
+    <!--grid occupy space as it needs or dimension are needed to be specified-->
+
+    <div style="
+        display: grid;">
+        <div style="background-color: lightpink;">div1 <p>Grid by default</p></div>
+    </div>
+
+
+    <div style="
+        display: grid;
+        grid-template-columns: 100px 100px;
+        margin-top:10px ;">
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: lightpink;">div1 <p>text text</p></div>
+    </div>
+    
+    <!-- if the number of grid are more than colums assigned, then the remaining grid get into the next row-->
+    <div>
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            margin-top: 10px;">
+            <div style="background-color: lightblue;">div1</div>
+            <div style="background-color: lightpink;">div1 <p>text text</p></div>
+            <div style="background-color: lightblue;">div1</div>
+            <div style="background-color: lightpink;">div1 <p>text text</p></div>
+        </div>
+     </div>
+
+     <!--1fr is a flexible unit that distributes the space proportionally-->
+     <!--in this example 1st column will ocuppy 200px size, 2nd column will ocuppy 1/3 of the remaining space and 3rd column will occupy 2/3 of the remainig space -->
+     <div style="
+        display: grid;
+        grid-template-columns: 200px 1fr 2fr;
+        margin-top: 15px;">
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: lightpink;">div1 <p></p></div>
+        <div style="background-color: lightblue;">div1 <p></p></div>
+    </div>
+
+
+    <!--here the spaces are equally distributed among the columns-->
+    <div style="
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px;
+        margin-top: 15px;
+        column-gap: 20px;
+        row-gap: 15px;
+        padding-bottom: 200px;">
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: lightpink;">div1 <p></p></div>
+        <div style="background-color: lightblue;">div1 <p></p></div>
+        <div style="background-color: lightpink;">div1 <p></p></div>
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: lightpink;">div1 </div>
+    </div>
+
+
+    
+</body>
+</html>

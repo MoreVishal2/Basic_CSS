@@ -1,0 +1,148 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(219, 214, 214) ;
+    z-index: 2;
+}
+
+body{
+    padding-top: 80px;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    height: 25px;
+    margin-left: 15px;
+}
+.logo{
+    height: 25px;
+    margin-left: 15px; ;
+}
+
+.middle-section{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+    margin-right: 35px;
+    margin-left: 70px;
+    max-width: 500px;
+    background-color: white;
+
+}
+.search-bar{
+    flex: 1;
+    height: 39px;
+    padding-left:  10px; 
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(180, 180, 180);
+    border-radius: 2px;
+    background-color: white;
+}
+.search-bar::placeholder{
+    font-size: 18px ;
+}
+.search-button{
+    height: 44px;
+    width: 60px;
+    background-color: rgb(254, 253, 253);
+    border-color: rgb(180, 180, 180);
+    border-width: 2px;
+    margin-left: -2px;
+}
+.search{
+    height: 30px;
+    margin-top: 5px;
+}
+
+.microphone-button, .search-button,
+.upload-icon-container,
+.apps-icon-container,
+.notification-icon-container,
+.profile-icon-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    bottom: -35px;
+    font-size: 12px;
+    opacity: 0;
+    border-radius: 5px;
+    white-space: nowrap ;
+    transition: opacity 0.15s;
+    pointer-events:none;
+}
+.search-button:hover .tooltip,
+.microphone-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.apps-icon-container:hover .tooltip,
+.notification-icon-container:hover .tooltip,
+.profile-icon-container:hover .tooltip
+{
+    opacity: 1;
+}
+
+.microphone-button{
+    background-color: rgb(254, 253, 253);
+    border-color: rgb(180, 180, 180);
+    border-width: 1px;
+    border-radius: 25px;
+    margin-left: 8px;
+}
+.microphone{
+    height: 34px;
+}
+
+.right-section{
+    width: 180px;
+    margin-right: 15px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.upload-icon{
+    height: 20px;
+}
+.apps-icon{
+    height: 25px;
+}
+.notification-icon{
+    height: 30px;
+}
+.notification-icon-container{
+    position: relative;
+}
+.notification-count{
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 0px 5px;
+    border-radius: 10px;
+    color: 3;
+    top: -2px;
+    right: -3px;
+}
+.profile-picture{
+    height: 30px;
+    border-radius: 15px;
+}

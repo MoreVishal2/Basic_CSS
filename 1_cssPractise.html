@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #stretch{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            font-size: xx-large;
+            margin: 30px 30px;
+        }
+        #stretch:hover{
+            transform: scale(1.5);
+        }
+        #d3{
+            display: block;    
+            padding: 10px 10px;
+            font-size: larger;
+            margin: auto 20px;
+        }
+        #d3:active{
+            box-shadow:4px 4px rgba(0,0,0,0.5);
+        }
+
+        #one,#two,#three{
+            display: inline-block;
+            justify-content: center;
+            margin: 20px 20px;
+            padding: 5px 15px;
+            font-size: larger;
+            background-color: rgb(12, 186, 255);
+            border: none;
+        }
+        #one{ left: 50px;}
+        #two{ left: 180px;}
+        #three{ left: 310px;}
+
+        #one:hover, #two:hover, #three:hover {
+            transform: scale(1.2); /* Scales button while keeping text centered */
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .img1{
+            display: inline-block;
+            width: 200px;
+            border-radius: 30px;
+            margin: 20px 20px;
+        }
+        .img2{
+            height: 150px;
+            width: 150px;  
+            overflow: hidden;    
+            margin: 20px 20px;
+            border-radius: 75px;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="stretch"><span>stretch</span></button>
+    <button id="d3">Click to see box-shadow</button>
+
+    <button id="one">one</button> 
+    <button id="two">two</button>
+    <button id="three">three</button><br>
+
+    <input style="font-size: 30px; display: block; ;" type="text" placeholder="Search" title="(seach to nahi hoga waise)">
+
+    <img class="img1" src="icons/sample-image.jpeg" >
+    <img class="img2" src="icons/sample-image.jpeg" >
+
+    
+   
+</body>
+</html>
