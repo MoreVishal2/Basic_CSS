@@ -13,3 +13,4 @@ It includes clear examples and hands-on practice to strengthen your understandin
   
   🎯Practice Project
   A mini-project replicating the YouTube homepage layout to apply the learned concepts
+  view the whole implementation here-> https://morevishal2.github.io/Basic_CSS
